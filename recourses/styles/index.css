@@ -657,6 +657,12 @@ input:focus {
     padding-left: 20px;
 }
 
+.heading-box__item:first-child a:hover {
+    background-color: white;
+    color: #172755;
+    transition-duration: 0.2s;
+}
+
 @media (max-width: 375px) {
     body {
         width: 375px;
