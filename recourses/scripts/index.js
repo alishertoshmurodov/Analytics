@@ -1,3 +1,22 @@
+// rating componet 
+
+window.addEventListener('load', function (e) {
+    const starEls = document.querySelectorAll('.fa-star');
+    for (let i = 0; i < starEls.length; i++) {
+        starEls[i].setAttribute('value', i + 1)
+    }
+    console.log(starEls);
+    starEls.forEach(element => {
+        element.addEventListener('click', function (e) {
+            for (let i = 0; i < Number(element.getAttribute('value')); i++) {
+                starEls[i].classList.add('checked');
+            }
+        });        
+    });
+});
+
+
+
 // sign up form
 
 const buttonEl = document.querySelector('button[type=submit]');
@@ -48,23 +67,6 @@ passwordEl.addEventListener('focusout', function (e) {
     rePasswordEl.removeAttribute('style');
 });
 
-
-// rating componet 
-
-window.addEventListener('load', function (e) {
-    const starEls = document.querySelectorAll('.fa-star');
-    for (let i = 0; i < starEls.length; i++) {
-        starEls[i].setAttribute('value', i + 1)
-    }
-    console.log(starEls);
-    starEls.forEach(element => {
-        element.addEventListener('click', function (e) {
-            for (let i = 0; i < Number(element.getAttribute('value')); i++) {
-                starEls[i].classList.add('checked');
-            }
-        });        
-    });
-});
 
 
 // plans scroll
