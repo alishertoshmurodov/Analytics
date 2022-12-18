@@ -663,9 +663,9 @@ input:focus {
     transition-duration: 0.2s;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     body {
-        width: 375px;
+        max-width: 425px;
     }
 
     .heading-box__item:last-child img:last-child {
@@ -812,6 +812,7 @@ input:focus {
 
     .heading-box {
         margin-top: 29px;
+        text-align: center;
     }
 
     .heading-box__item:first-child {
